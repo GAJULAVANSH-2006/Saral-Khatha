@@ -1,0 +1,14 @@
+{
+  "name": "saral-khatha",
+  "version": "1.0.0",
+  "description": "MERN stack accounting software",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\" --names \"API,UI\" --prefix-colors \"blue,green\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
